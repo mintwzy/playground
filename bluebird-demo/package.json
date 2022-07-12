@@ -1,0 +1,12 @@
+{
+  "name": "bluebird-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsnd --respawn index.ts"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2"
+  }
+}
