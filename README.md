@@ -4,6 +4,7 @@ Code snippets for reference
 
 ## References
 
-- [https://github.com/axios/axios](https://github.com/axios/axios)
-- [http://bluebirdjs.com/docs/api-reference.html](http://bluebirdjs.com/docs/api-reference.html)
-- [https://www.mysqltutorial.org/](https://www.mysqltutorial.org/)
+- [Axios](https://github.com/axios/axios)
+- [Bluebird](http://bluebirdjs.com/docs/api-reference.html)
+- [GraphQL Yoga](https://www.graphql-yoga.com/)
+- [MySQL Tutorial](https://www.mysqltutorial.org/)
