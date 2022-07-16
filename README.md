@@ -2,6 +2,15 @@
 
 Code snippets for reference
 
+## MySQL
+
+Most `SQL` scripts are based on database in [MySQL Tutorial](https://www.mysqltutorial.org/).
+
+## Node.js
+
+All `Node.js` projects share the same `.eslintrc.js` and `tsconfig.json`. But they will have their 
+own `package.json`.
+
 ## References
 
 - [Axios](https://github.com/axios/axios)
