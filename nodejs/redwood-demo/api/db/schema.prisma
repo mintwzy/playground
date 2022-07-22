@@ -1,0 +1,24 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = "native"
+}
+
+model Idol {
+  id        Int       @id @default(autoincrement())
+  name      String    @unique
+  photos    Photo[]
+  createdAt DateTime  @default(now())
+}
+
+model Photo {
+  id        Int       @id @default(autoincrement())
+  path      String    @unique
+  idolId    Int
+  idol      Idol      @relation(fields: [idolId], references: [id])
+  createdAt DateTime  @default(now())
+}
