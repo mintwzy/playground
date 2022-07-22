@@ -11,6 +11,7 @@
 }
 
 .center {
+  visibility: hidden;
     padding-top: 30%;
     padding-left: 30%;
     position: relative;

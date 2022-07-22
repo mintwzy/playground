@@ -12,7 +12,7 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 
 import './ImageViewer.css';
-import { getRandomPhotos, syncPhotos } from '../../api';
+import { getRandomPhotos } from '../../api';
 
 const ImageViewer = () => {
 	const [autoplay, setAutoplay] = useState(true);
@@ -36,7 +36,7 @@ const ImageViewer = () => {
 						id: d.id,
 						path: d.path
 					};
-					return `data/images/${d.path}`;
+					return `images/${d.path}`;
 				}));
 				setImageCount(res.data.total);
 				return tempIndexToData;
@@ -49,7 +49,7 @@ const ImageViewer = () => {
 				setReady(true);
 			})
 			.then(() => {
-				return syncPhotos();
+				// return syncPhotos();
 			})
 			.catch((err) => {
 				console.log(err);

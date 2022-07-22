@@ -8,8 +8,7 @@ Most `SQL` scripts are based on database in [MySQL Tutorial](https://www.mysqltu
 
 ## Node.js
 
-All `Node.js` projects share the same `.eslintrc.js` and `tsconfig.json`. But they will have their 
-own `package.json`.
+The same 'tsconfig.json' is used.
 
 ## Ruby
 

@@ -17,7 +17,7 @@ function Home () {
 	useEffect(() => {
 		getRandomPhotos(1)
 			.then(res => {
-				const path = `data/images/${res.data.data[0].path}`;
+				const path = `images/${res.data.data[0].path}`;
 				setBgImage(path);
 			});
 	}, []);
