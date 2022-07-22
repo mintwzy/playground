@@ -1,0 +1,9 @@
+.imageDownloader {
+    display: flex;
+    padding: 100px;
+}
+
+.downloadButton {
+    display: flex;
+    margin: auto;
+}
