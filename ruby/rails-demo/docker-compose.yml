@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+  db:
+    image: mysql:8
+    ports:
+      - "3307:3306"
+    volumes:
+      - /var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+  redis:
+    image: redis:7
+    command: redis-server
+    ports:
+      - '6380:6379'
+  sidekiq:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    depends_on:
+      - 'db'
+      - 'redis'
+    command: bundle exec sidekiq
+    volumes:
+      - .:/myapp
+      - "${MEDIA_PATH_LOCAL}:${MEDIA_PATH}"
+  server:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    volumes:
+      - .:/myapp
+      - "${MEDIA_PATH_LOCAL}:${MEDIA_PATH}"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
