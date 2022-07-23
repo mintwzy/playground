@@ -1,0 +1,37 @@
+.number-input {
+    width: 10%;
+}
+
+.folder-input {
+    width: 50%;
+}
+
+.url-input {
+    width: 75%;
+}
+
+.center {
+  visibility: hidden;
+    padding-top: 30%;
+    padding-left: 30%;
+    position: relative;
+}
+
+#home {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.home-label {
+    mix-blend-mode: darken;
+}
+
+.demo-bg {
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
