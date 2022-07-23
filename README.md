@@ -8,7 +8,7 @@ Most `SQL` scripts are based on database in [MySQL Tutorial](https://www.mysqltu
 
 ## Node.js
 
-The same 'tsconfig.json' is used.
+The same `tsconfig.json` is used.
 
 ## Ruby
 
