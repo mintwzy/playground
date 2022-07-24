@@ -12,6 +12,8 @@ import VideoStat from './components/VideoStat';
 import ImageDownloader from './components/ImageDownloader/ImageDownloader';
 import VideoList from './components/VideoList';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 ReactDOM.render(
 	<React.StrictMode>
 		<Router>
