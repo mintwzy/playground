@@ -72,7 +72,7 @@ const ImageViewer = () => {
 	const deleteImage = (id) => {
 		if (window.confirm(`Are you sure you want to delete ${id}`)) {
 			axios.delete(`http://localhost:3000/photos/${id}`)
-				.then(res => {
+				.then(() => {
 					console.log(`${id} deleted`);
 				});
 		}

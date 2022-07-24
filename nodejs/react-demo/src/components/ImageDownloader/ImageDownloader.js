@@ -68,7 +68,7 @@ const ImageDownloader = () => {
 		events: {
 			onClick: (e, column, columnIndex, row) => {
 				return toggleEnable(row.id, !row.enable)
-					.then((res) => {
+					.then(() => {
 						window.location.reload(false);
 					})
 					.catch(err => {
